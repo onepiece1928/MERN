@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;  
+            width: auto;
+        }
+        td {
+            border: 2px solid black; 
+            padding:0;
+            text-align: center;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="age"],
+        input[type="tel"],
+        input[type="state"],
+        select,
+        textarea {
+        border: 1px solid black; 
+        padding: 0; 
+        width: 100%; 
+        }
+        #dec {
+            text-align: left;
+        }
+        #et{
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <center>
+            <table>
+                <caption>Registration Form</caption>
+                <tr>
+                    <td><strong><label for="fn">First Name</label></strong></td>
+                    <td><input type="text" name="fn"/></td>
+                </tr>
+                <tr>
+                    <td><strong><label for="ln">Last Name</label></strong></td>
+                    <td><input type="text" name="ln"/></td>
+                </tr>
+                <tr>
+                    <td><strong><label for="email">Email</label></strong></td>
+                    <td><input type="email" name="email"/></td>
+                </tr>
+                <tr>
+                    <td><strong><label for="pass">Password</label></strong></td>
+                    <td><input type="password" name="pass" /></td>
+                </tr>
+                <tr>
+                    <td><strong><label for="repass">Re-enter Password</label></strong></td>
+                    <td><input type="password" name="repass"/></td>
+                </tr>
+                <tr>
+                    <td><strong><label>Gender</label></strong></td>
+                    <td>
+                        <input type="radio" name="gender" />Male
+                        <input type="radio" name="gender" />Female
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong><label for="age">Age</label></strong></td>
+                    <td><input type="age" name="age" /></td>
+                </tr>
+                <tr>
+                    <td><strong><label for="phone">Phone Number</label></strong></td>
+                    <td><input type="tel" name="phone" /></td>
+                </tr>
+                <tr>
+                    <td><strong><label>Address</label></strong></td>
+                    <td><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <td><strong><label for="state">State</label></strong></td>
+                    <td><input type="state" name="state" /></td>
+                </tr>
+                <tr>
+                    <td><strong><label>Country</label></strong></td>
+                    <td>
+                        <select>
+                            <option>Choose you country</option>
+                            <option>India</option>
+                            <option>Pakistan</option>
+                            <option>China</option>
+                            <option>Bangladesh</option>
+                            <option>Srilanka</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong><label>Languages known</label></strong></td>
+                    <td>
+                        <input type="checkbox" />English
+                        <input type="checkbox" />Kannada
+                        <input type="checkbox"  />Hindi
+                        <input  type="checkbox" />Telgu
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dec" colspan="2"><input type="checkbox" name="declaration" />Hereby I declare all the given details are true</td>
+                </tr>
+                <tr>
+                    <td id="et" colspan="2">Log in to <a href="#">Ethnus</a> website</td>
+                </tr>
+            </table><br/>
+            <input type="submit" value="Register" />
+        </center>
+    </form>
+</body>
+</html>
